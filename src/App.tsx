@@ -1,6 +1,19 @@
+import {
+  HomeLayout,
+  Landing,
+  Error,
+  Products,
+  SingleProduct,
+  Cart,
+  About,
+  Register,
+  Login,
+  Checkout,
+  Orders,
+} from './pages';
+
 import { Button } from './components/ui/button';
 import { useAppSelector } from './hooks';
-
 function App() {
   const { name } = useAppSelector((state) => state.userState);
   console.log(name);
@@ -15,6 +28,7 @@ function App() {
       >
         Click Me
       </Button>
+      <Cart />
     </div>
   );
 }
