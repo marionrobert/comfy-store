@@ -11,13 +11,16 @@ import {
   Register,
   Login,
   Checkout,
-  Orders,
+  Orders
 } from './pages';
+
+import { ErrorElement } from './components';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+    errorElement: <Error />,
 
     children: [
       {
@@ -26,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'products',
-        element: <Products />,
+        element: <Products />
       },
       {
         path: 'products/:id',
@@ -38,7 +41,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: <About />
+        element: <About />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'checkout',
@@ -53,10 +57,12 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+    errorElement: <Error />,
   },
   {
     path: '/register',
     element: <Register />,
+    errorElement: <Error />,
   },
 ]);
 
