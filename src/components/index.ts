@@ -7,6 +7,6 @@ export { default as ModeToggle } from './ModeToggle';
 export { default as ErrorElement} from "./ErrorElement";
 export {default as Hero } from "./Hero";
 export {default as HeroCarousel } from "./HeroCarousel";
-export {default as GeaturedProducts } from "./FeaturedProducts";
+export {default as FeaturedProducts } from "./FeaturedProducts";
 export {default as SectionTitle } from "./SectionTitle";
 export {default as ProductsGrid } from "./ProductsGrid";

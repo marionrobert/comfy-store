@@ -1,6 +1,11 @@
-const Landing = () => {
+import { Hero, FeaturedProducts } from '@/components';
+
+function Landing() {
   return (
-    <>Coucou from Landing</>
-  )
+    <>
+      <Hero />
+      <FeaturedProducts />
+    </>
+  );
 }
 export default Landing;

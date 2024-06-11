@@ -14,7 +14,7 @@ import {
   Orders
 } from './pages';
 
-import { ErrorElement } from './components';
+import { ErrorElement } from '@/components';
 
 const router = createBrowserRouter([
   {
