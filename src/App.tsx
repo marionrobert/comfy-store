@@ -11,8 +11,10 @@ import {
   Register,
   Login,
   Checkout,
-  Orders,
+  Orders
 } from './pages';
+
+import { ErrorElement } from './components';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'products',
-        element: <Products />,
+        element: <Products />
       },
       {
         path: 'products/:id',
@@ -39,7 +41,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: <About />
+        element: <About />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'checkout',
