@@ -1,5 +1,5 @@
 export { default as HomeLayout } from './HomeLayout';
-export { default as Landing } from './Landing';
+export { default as Landing, loader as landingLoader } from './Landing';
 export { default as SingleProduct } from './SingleProduct';
 export { default as Products } from './Products';
 export { default as Cart } from './Cart';

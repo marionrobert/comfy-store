@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
   HomeLayout,
   Landing,
+  landingLoader,
   Error,
   Products,
   SingleProduct,
@@ -26,18 +27,23 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        loader: landingLoader,
+        errorElement: <ErrorElement />,
       },
       {
         path: 'products',
-        element: <Products />
+        element: <Products />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'products/:id',
         element: <SingleProduct />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'cart',
         element: <Cart />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'about',
@@ -47,10 +53,12 @@ const router = createBrowserRouter([
       {
         path: 'checkout',
         element: <Checkout />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'orders',
         element: <Orders />,
+        errorElement: <ErrorElement />
       },
     ],
   },
