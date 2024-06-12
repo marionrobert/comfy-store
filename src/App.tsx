@@ -6,6 +6,7 @@ import {
   landingLoader,
   Error,
   Products,
+  productsLoader,
   SingleProduct,
   Cart,
   About,
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       {
         path: 'products',
         element: <Products />,
+        loader: productsLoader,
         errorElement: <ErrorElement />
       },
       {
