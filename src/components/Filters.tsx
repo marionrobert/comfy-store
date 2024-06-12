@@ -2,6 +2,7 @@ import { Form, useLoaderData } from 'react-router-dom';
 import { type ProductsResponseWithParams } from '@/utils';
 import FormInput from './FormInput';
 import FormSelect from './FormSelect';
+import FormRange from './FormRange';
 
 function Filters() {
   const { meta, params } = useLoaderData() as ProductsResponseWithParams;
@@ -37,13 +38,14 @@ function Filters() {
       {
         /* ORDER */
       }
-
       <FormSelect
         label='order by'
         name='order'
         options={['a-z', 'z-a', 'high', 'low']}
         defaultValue={order}
       />
+      {/* PRICE */}
+      <FormRange label='price' name='price' defaultValue={price} />
     </Form>
   );
 }
