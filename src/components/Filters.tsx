@@ -1,5 +1,7 @@
-import { Form, useLoaderData } from 'react-router-dom';
-import { type ProductsResponseWithParams } from '@/utils';
+import { Form, useLoaderData, Link } from 'react-router-dom';
+
+import { Button } from './ui/button';
+import { ProductsResponseWithParams } from '@/utils';
 import FormInput from './FormInput';
 import FormSelect from './FormSelect';
 import FormRange from './FormRange';
@@ -53,6 +55,18 @@ function Filters() {
         name='shipping'
         defaultValue={shipping}
       />
+      <Button type='submit' size='sm' className='self-end mb-2'>
+        Search
+      </Button>
+      <Button
+        type='button'
+        asChild
+        size='sm'
+        variant='outline'
+        className='self-end mb-2'
+      >
+        <Link to='/products'>reset</Link>
+      </Button>
     </Form>
   );
 }
