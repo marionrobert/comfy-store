@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
 import { type LoaderFunction } from 'react-router-dom';
+import { SelectProductColor, SelectProductAmount } from '@/components';
+import { Mode } from '@/components/SelectProductAmount';
 
 export const loader: LoaderFunction = async ({
   params,
