@@ -8,6 +8,7 @@ import {
   Products,
   productsLoader,
   SingleProduct,
+  singleProductLoader,
   Cart,
   About,
   Register,
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       {
         path: 'products/:id',
         element: <SingleProduct />,
+        loader: singleProductLoader,
         errorElement: <ErrorElement />
       },
       {
