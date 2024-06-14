@@ -35,7 +35,7 @@ function Register() {
           <CardTitle className='text-center'>Register</CardTitle>
         </CardHeader>
         <CardContent>
-          <Form method='post' action=''>
+          <Form method='post'>
             <FormInput type='text' name='username' defaultValue='test' />
             <FormInput type='email' name='email' defaultValue='test@test.com' />
             <FormInput type='password' name='password' defaultValue='secret' />
