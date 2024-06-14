@@ -7,5 +7,5 @@ export { default as Error } from './Error';
 export { default as About } from './About';
 export { default as Login } from './Login';
 export { default as Register } from './Register';
-export { default as Checkout } from './Checkout';
-export { default as Orders } from './Orders';
+export { default as Checkout, loader as checkoutLoader  } from './Checkout';
+export { default as Orders, loader as ordersLoader } from './Orders';
