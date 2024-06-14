@@ -18,6 +18,7 @@ import {
 } from './pages';
 
 import { ErrorElement } from '@/components';
+import { action as registerAction } from './pages/Register';
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,7 @@ const router = createBrowserRouter([
     path: '/register',
     element: <Register />,
     errorElement: <Error />,
+    action: registerAction,
   },
 ]);
 
