@@ -40,9 +40,7 @@ function Register() {
             <FormInput type='email' name='email' defaultValue='test@test.com' />
             <FormInput type='password' name='password' defaultValue='secret' />
 
-            <Button type='submit' variant='default' className='w-full mt-4'>
-              Submit
-            </Button>
+            <SubmitBtn text='Register' className='w-full mt-4' />
 
             <p className='text-center mt-4'>
               Already a member?
